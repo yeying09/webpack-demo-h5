@@ -1,0 +1,7 @@
+@mixin multi-text-overflow($line: 2) {
+  // width: // 加宽度width属来兼容部分浏览器
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $line;
+  overflow: hidden;
+}
