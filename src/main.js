@@ -9,6 +9,8 @@ import '@/assets/js/common/flexible'
 import '@/assets/styles/common/reset.scss'
 import '@/assets/styles/common/public.scss'
 
+import '@/components/global'
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
