@@ -8,6 +8,7 @@ import '@/assets/js/common/flexible'
 
 import '@/assets/styles/common/reset.scss'
 import '@/assets/styles/common/public.scss'
+import '@/assets/styles/common/helper.scss'
 
 import '@/components/global'
 

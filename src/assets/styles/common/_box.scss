@@ -1,0 +1,257 @@
+/**
+ * Created by WebStorm.
+ * Box Model
+ * User: ying.ye<ying.ye@ecreditpal.com>
+ * Date: 2018/2/7
+ * Time: 上午10:24
+ */
+// ----------------------------------------------
+// Space - Margin & Padding
+// ----------------------------------------------
+// margin
+.m-auto {
+  margin: 0 auto !important;
+}
+
+.no-m {
+  margin: 0!important;
+}
+.no-m-t {
+  margin-top: 0!important;
+}
+.no-m-r {
+  margin-right: 0!important;
+}
+.no-m-b {
+  margin-bottom: 0!important;
+}
+.no-m-l {
+  margin-left: 0!important;
+}
+
+@for $counter from 0 through 10 {
+  .m-#{ $counter * 5 } {
+    margin: ($counter * 5px) !important;
+  }
+  .m-t-#{ $counter * 5 } {
+    margin-top: ($counter * 5px) !important;
+  }
+  .m-r-#{ $counter * 5 } {
+    margin-right: ($counter * 5px) !important;
+  }
+  .m-b-#{ $counter * 5 } {
+    margin-bottom: ($counter * 5px) !important;
+  }
+  .m-l-#{ $counter * 5 } {
+    margin-left: ($counter * 5px) !important;
+  }
+}
+
+// margin negtive
+@for $counter from 1 through 10 {
+  .m-t--#{ $counter * 5 } {
+    margin-top: ($counter * -5px) !important;
+  }
+  .m-r--#{ $counter * 5 } {
+    margin-right: ($counter * -5px) !important;
+  }
+  .m-b--#{ $counter * 5 } {
+    margin-bottom: ($counter * -5px) !important;
+  }
+  .m-l--#{ $counter * 5 } {
+    margin-left: ($counter * -5px) !important;
+  }
+}
+
+// padding
+.no-p {
+  padding: 0!important;
+}
+.no-p-t {
+  padding-top: 0!important;
+}
+.no-p-r {
+  padding-right: 0!important;
+}
+.no-p-b {
+  padding-bottom: 0!important;
+}
+.no-p-l {
+  padding-left: 0!important;
+}
+
+@for $counter from 0 through 10 {
+  .p-#{ $counter * 5 } {
+    padding: ($counter * 5px) !important;
+  }
+  .p-t-#{ $counter * 5 } {
+    padding-top: ($counter * 5px) !important;
+  }
+  .p-r-#{ $counter * 5 } {
+    padding-right: ($counter * 5px) !important;
+  }
+  .p-b-#{ $counter * 5 } {
+    padding-bottom: ($counter * 5px) !important;
+  }
+  .p-l-#{ $counter * 5 } {
+    padding-left: ($counter * 5px) !important;
+  }
+}
+
+// ----------------------------------------------
+// Border
+// ----------------------------------------------
+.no-border {
+  border-width: 0 !important;
+}
+
+.no-border-t {
+  border-top-width: 0!important;
+}
+
+.no-border-r {
+  border-right-width: 0!important;
+}
+
+.no-border-b {
+  border-bottom-width: 0!important;
+}
+
+.no-border-l {
+  border-left-width: 0!important;
+}
+
+.border-none {
+  border-style: none !important;
+}
+
+// border-width with default color and style
+@for $counter from 0 through 5 {
+  .b-#{ $counter } {
+    border: ($counter * 1px) solid #eee !important;/*no*/
+  }
+  .b-t-#{ $counter } {
+    border-top: ($counter * 1px) solid #eee !important;/*no*/
+  }
+  .b-r-#{ $counter } {
+    border-right: ($counter * 1px) solid #eee !important;/*no*/
+  }
+  .b-b-#{ $counter } {
+    border-bottom: ($counter * 1px) solid #eee !important;/*no*/
+  }
+  .b-l-#{ $counter } {
+    border-left: ($counter * 1px) solid #eee !important;/*no*/
+  }
+}
+
+// ----------------------------------------------
+// Radius
+// ----------------------------------------------
+.r-full {
+  border-radius: 100%
+}
+
+.r-t-l-full {
+  border-top-left-radius: 100%
+}
+
+.r-t-r-full {
+  border-top-right-radius: 100%
+}
+
+.r-b-r-full {
+  border-bottom-right-radius: 100%
+}
+
+.r-b-l-full {
+  border-bottom-left-radius: 100%
+}
+
+@for $counter from 0 through 10 {
+  .r-#{ $counter * 2 } {
+    border-radius: ($counter * 2px) !important;
+  }
+  .r-t-l-#{ $counter } {
+    border-top-left-radius: ($counter * 2px) !important;
+  }
+  .r-t-r-#{ $counter } {
+    border-top-right-radius: ($counter * 2px) !important;
+  }
+  .r-b-r-#{ $counter } {
+    border-bottom-right-radius: ($counter * 2px) !important;
+  }
+  .r-b-l-#{ $counter } {
+    border-bottom-left-radius: ($counter * 2px) !important;
+  }
+}
+
+// ----------------------------------------------
+// box-shadow
+// ----------------------------------------------
+.no-shadow,
+.shadow-none {
+  box-shadow: none !important;
+}
+
+.shadow-xs {
+  box-shadow: 0 1px 5px 1px rgba(0, 0, 0, .15);
+}
+
+.shadow-sm {
+  box-shadow: 0 2px 10px 2px rgba(0, 0, 0, .15);
+}
+
+.shadow-md {
+  box-shadow: 0 3px 20px 3px rgba(0, 0, 0, .15);
+}
+
+.shadow-lg {
+  box-shadow: 0 4px 30px 4px rgba(0, 0, 0, .15);
+}
+
+.shadow-xl {
+  box-shadow: 0 5px 40px 5px rgba(0, 0, 0, .15);
+}
+
+// ----------------------------------------------
+// Overflow
+// ----------------------------------------------
+.overflow-auto {
+  overflow: auto !important;
+}
+
+.overflow-hidden {
+  overflow: hidden !important;
+}
+
+.overflow-visible {
+  overflow: visible !important;
+}
+
+.overflow-scroll {
+  overflow: scroll !important;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden !important;
+}
+
+.overflow-x-visible {
+  overflow-x: visible !important;
+}
+
+.overflow-x-scroll {
+  overflow-x: scroll !important;
+}
+
+.overflow-y-hidden {
+  overflow-y: hidden !important;
+}
+
+.overflow-y-visible {
+  overflow-y: visible !important;
+}
+
+.overflow-y-scroll {
+  overflow-y: scroll !important;
+}

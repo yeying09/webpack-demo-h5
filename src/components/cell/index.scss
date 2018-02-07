@@ -1,14 +1,29 @@
 .cell-box {
-  min-height: 45px;
-  padding: 0 10px;
+  position: relative;
+  min-height: 55px;
+  padding: 10px;
 
-  .-title {
-    flex-grow: 0;
-    flex-shrink: 0;
+  &:after {
+    content: '';
+    position: absolute;
+    left: 10px;
+    right: 0;
+    bottom: 0;
+    height: 1px;/*no*/
+    background-color: #eee;
   }
 
-  .-content {
-    flex-grow: 1;
-    flex-shrink: 0;
+  &:last-child:after {
+    left: 0;
+  }
+
+  .-arrow {
+    display: block;
+    width: 8px;
+    height: 8px;
+    margin-left: 5px;
+    border: 1px solid #e1e1e1;/*no*/
+    border-width: 1px 1px 0 0;
+    transform: rotate(45deg);
   }
 }

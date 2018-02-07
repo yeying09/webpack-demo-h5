@@ -1,0 +1,130 @@
+/**
+ * Created by WebStorm.
+ * Flex Layout
+ * User: ying.ye<ying.ye@ecreditpal.com>
+ * Date: 2018/2/6
+ * Time: 下午3:56
+ */
+
+/** flex布局 */
+.dis-flex {
+ display: -webkit-box;
+ display: flex;
+}
+
+/** flex布局 主轴起点（左/上）对齐 */
+.flex-main-head {
+ /* 09版 */
+ -webkit-box-pack: start;
+ /* 12版 */
+ justify-content: flex-start;
+}
+
+/** flex布局 主轴终点（右/下）对齐 */
+.flex-main-tail {
+ /* 09版 */
+ -webkit-box-pack: end;
+ /* 12版 */
+ justify-content: flex-end;
+}
+
+/** flex布局 主轴方向内容对齐居中 */
+.flex-main-center {
+ /* 09版 */
+ -webkit-box-pack: center;
+ /* 12版 */
+ justify-content: center;
+}
+
+/** flex布局 主轴各内容之间间距相等（只有两个子元素则分居两边） */
+.flex-main-between {
+ /* 09版 */
+ -webkit-box-pack: justify;
+ /* 12版 */
+ justify-content: space-between;
+}
+
+/** flex布局 交叉轴起点（上/左）对齐 */
+.flex-cross-head {
+ /* 09版 */
+ -webkit-box-align: start;
+ /* 12版 */
+ align-items: flex-start;
+}
+
+/** flex布局 交叉轴终点（下/右）对齐 */
+.flex-cross-tail {
+ /* 09版 */
+ -webkit-box-align: end;
+ /* 12版 */
+ align-items: flex-end;
+}
+
+/** flex布局 交叉轴方向内容对齐居中 */
+.flex-cross-center {
+ /* 09版 */
+ -webkit-box-align: center;
+ /* 12版 */
+ align-items: center;
+}
+
+/** flex布局 交叉轴(多行)起点（上/左）对齐 */
+.flex-multi-cross-head {
+ align-content: flex-start;
+}
+
+/** flex布局 交叉轴(多行)终点（下/右）对齐 */
+.flex-multi-cross-tail {
+ align-content: flex-end;
+}
+
+/** flex布局 交叉轴(多行)方向内容对齐居中 */
+.flex-multi-cross-center {
+ align-content: center;
+}
+
+/** flex布局 交叉轴(多个轴)各轴之间间距相等（只有两个轴则分居两边） */
+.flex-multi-cross-between {
+ align-content: space-between;
+}
+
+/** 容器内单个元素 对齐顶部 */
+.flex-self-align-head {
+ align-self: flex-start;
+}
+
+/** 容器内单个元素 对齐底部 */
+.flex-self-align-tail {
+ align-self: flex-end;
+}
+
+/** 容器内单个元素 居中对齐 */
+.flex-self-align-center {
+ align-self: center;
+}
+
+/** flex布局 主轴设为垂直方向 */
+.flex-column {
+ /* 09版 */
+ -webkit-box-orient: vertical;
+ /* 12版 */
+ flex-direction: column;
+}
+
+/* flex容器内元素超出的处理：换行（其他值:nowrap|wrap|wrap-reverse（第一行在下方） */
+.flex-vw {
+ /* 09版 */
+ -webkit-box-lines: multiple;
+ /* 12版 */
+ flex-wrap: wrap;
+}
+
+.flex-0 {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.flex-1 {
+  flex-grow: 1;
+  flex-shrink: 1;
+}

@@ -1,0 +1,80 @@
+/**
+ * Created by WebStorm.
+ * Colors
+ * User: ying.ye<ying.ye@ecreditpal.com>
+ * Date: 2018/2/7
+ * Time: 上午10:13
+ */
+// --------------------------------------------------
+// Background Colors
+// --------------------------------------------------
+.bg-transparent {
+  background-color: transparent;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.bg-black {
+  background-color: #2d353c;
+}
+
+@each $name, $color in $color-list {
+  .bg-#{$name} {
+    background-color: $color;
+  }
+  .bg-#{$name}-light {
+    background-color: lighten($color, 15%);
+  }
+  .bg-#{$name}-lighter {
+    background-color: lighten($color, 25%);
+  }
+  .bg-#{$name}-lightest {
+    background-color: lighten($color, 35%);
+  }
+  .bg-#{$name}-dark {
+    background-color: darken($color, 15%);
+  }
+  .bg-#{$name}-darker {
+    background-color: darken($color, 25%);
+  }
+  .bg-#{$name}-darkest {
+    background-color: darken($color, 35%);
+  }
+}
+
+// --------------------------------------------------
+// Text Colors
+// --------------------------------------------------
+.text-white {
+  color: #fff;
+}
+
+.text-black {
+  color: #2d353c;
+}
+
+@each $name, $color in $color-list {
+  .text-#{$name} {
+    color: $color;
+  }
+  .text-#{$name}-light {
+    color: lighten($color, 15%);
+  }
+  .text-#{$name}-lighter {
+    color: lighten($color, 25%);
+  }
+  .text-#{$name}-lightest {
+    color: lighten($color, 35%);
+  }
+  .text-#{$name}-dark {
+    color: darken($color, 15%);
+  }
+  .text-#{$name}-darker {
+    color: darken($color, 25%);
+  }
+  .text-#{$name}-darkest {
+    color: darken($color, 35%);
+  }
+}
