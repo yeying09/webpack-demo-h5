@@ -1,5 +1,5 @@
 <template>
-  <router-link :to="to" v-if="isLink" class="dis-flex flex-main-between flex-cross-center cell-box">
+  <router-link :to="to" class="dis-flex flex-main-between flex-cross-center cell-box" v-if="isLink">
     <div class="dis-flex flex-cross-center flex-1" :style="{ width: titleWidth }">
       <slot name="headIcon"></slot>
       <span v-if="title" class="text-left">{{ title }}</span>
@@ -11,7 +11,7 @@
     </div>
   </router-link>
 
-  <a v-else class="dis-flex flex-main-between flex-cross-center cell-box">
+  <a class="dis-flex flex-main-between flex-cross-center cell-box" v-else>
     <div class="dis-flex flex-cross-center flex-1" :style="{ width: titleWidth }">
       <slot name="headIcon"></slot>
       <span v-if="title" class="text-left">{{ title }}</span>

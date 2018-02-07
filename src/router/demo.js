@@ -1,15 +1,15 @@
-const DemoComponent = path => () => import('@/views/' + path);
+const vComponent = path => () => import('@/views/' + path);
 
 const demoRouter = [
   {
     path: '/demo',
     name: 'demo',
-    component: DemoComponent('demos')
+    component: vComponent('demos')
   },
   {
     path: '/demo/cell',
     name: 'cell',
-    component: DemoComponent('demos/Cell')
+    component: vComponent('demos/Cell')
   }
 ]
 
