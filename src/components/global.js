@@ -1,9 +1,11 @@
 import Vue from 'vue';
 
 import Cell from './cell'
+import TopBar from './topBar'
 
 const components = {
-  Cell
+  Cell,
+  TopBar
 }
 
 Object.keys(components).forEach((key) => {
