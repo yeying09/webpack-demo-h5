@@ -1,3 +1,27 @@
 .top-bar-box {
-  height: 50px;
+  height: 48px;
+}
+
+.fixed-top {
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+}
+
+.top-back {
+  position: absolute;
+  left: 15px;
+  display: block;
+  font-size: 14px;
+}
+
+.top-title {
+  width: 70%;
+}
+
+.top-right {
+  right: 15px;
 }

@@ -1,5 +1,8 @@
 <template lang="html">
-  <div>
+  <div class="p-t-50">
+    <TopBar back="/demo" fixed class="b-b-1">
+      <SvgBack slot="left"></SvgBack>
+    </TopBar>
     <Cell
         :title="item.title"
         :content="item.content"
@@ -26,8 +29,8 @@
       <p>title-width | 标题宽度(String，建议使用百分比)</p>
       <p>content-width | 内容宽度(String，建议使用百分比)</p>
       <p>has-arrow | 是否带箭头(Boolean)</p>
-      <p>is-link | 是否链接(Boolean)</p>
-      <p>to | 链接内容(Object or String)</p>
+      <p>is-link | 是否路由(Boolean)</p>
+      <p>to | 链接路由(Object or String)</p>
     </div>
   </div>
 </template>

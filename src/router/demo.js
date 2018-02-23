@@ -6,7 +6,7 @@ const demoRouter = [
     name: 'demo',
     component: dComponent(''),
     meta: {
-      name: 'Demo'
+      name: '示例'
     }
   },
   {
@@ -23,6 +23,14 @@ const demoRouter = [
     component: dComponent('/TopBar'),
     meta: {
       name: 'TopBar'
+    }
+  },
+  {
+    path: '/demo/helper',
+    name: 'helper',
+    component: dComponent('/Helper'),
+    meta: {
+      name: 'Helper'
     }
   }
 ]

@@ -1,5 +1,6 @@
 <template>
   <div>
+    <TopBar class="b-b-1"></TopBar>
     <Cell
         :title="item.title"
         :content="item.content"
@@ -18,13 +19,15 @@
         components: [
           {
             title: 'Cell',
-            content: '',
             path: '/demo/cell'
           },
           {
             title: 'TopBar',
-            content: '',
             path: '/demo/topBar'
+          },
+          {
+            title: 'Helper',
+            path: '/demo/helper'
           }
         ]
       }

@@ -10,6 +10,9 @@ import '@/assets/styles/common/reset.scss'
 import '@/assets/styles/common/public.scss'
 import '@/assets/styles/common/helper.scss'
 
+import '@/assets/font/iconfont.scss'
+import '@/assets/font/iconfont.js'
+
 import '@/components/global'
 
 Vue.config.productionTip = false

@@ -34,6 +34,9 @@ module.exports = {
     'padded-blocks': 'off',
     'prefer-promise-reject-errors': 'off',
     'semi': 'off',
-    'space-before-function-paren': 'off'
+    'semi-spacing': 'off',
+    'space-before-blocks': 'off',
+    'space-before-function-paren': 'off',
+    'space-infix-ops': 'off'
   }
 }
