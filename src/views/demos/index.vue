@@ -28,6 +28,10 @@
           {
             title: 'Color Card',
             path: '/demo/colorCard'
+          },
+          {
+            title: 'TabBar',
+            path: '/demo/tabBar'
           }
         ]
       }

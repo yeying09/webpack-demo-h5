@@ -32,6 +32,14 @@ const demoRouter = [
     meta: {
       name: 'Color Card'
     }
+  },
+  {
+    path: '/demo/tabBar',
+    name: 'tabBar',
+    component: dComponent('/TabBar'),
+    meta: {
+      name: 'TabBar'
+    }
   }
 ]
 
