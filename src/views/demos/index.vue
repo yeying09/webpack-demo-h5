@@ -26,8 +26,8 @@
             path: '/demo/topBar'
           },
           {
-            title: 'Helper',
-            path: '/demo/helper'
+            title: 'Color Card',
+            path: '/demo/colorCard'
           }
         ]
       }

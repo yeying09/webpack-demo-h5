@@ -26,11 +26,11 @@ const demoRouter = [
     }
   },
   {
-    path: '/demo/helper',
-    name: 'helper',
-    component: dComponent('/Helper'),
+    path: '/demo/colorCard',
+    name: 'colorCard',
+    component: dComponent('/ColorCard'),
     meta: {
-      name: 'Helper'
+      name: 'Color Card'
     }
   }
 ]

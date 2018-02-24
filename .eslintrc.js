@@ -21,7 +21,10 @@ module.exports = {
   ],
   // add your custom rules here
   rules: {
+    'block-spacing': 'off',
     'brace-style': 'off',
+    'comma-spacing': 'off',
+    'eol-last': 'off',
     // allow async-await
     'generator-star-spacing': 'off',
     'keyword-spacing': 'off',
