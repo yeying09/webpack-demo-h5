@@ -3,20 +3,22 @@
     <TopBar back="/demo" fixed class="b-b-1">
       <SvgBack slot="left"></SvgBack>
     </TopBar>
-    <TopBar title="没有返回功能">
-    </TopBar>
-    <TopBar title="有背景色" bg-color="teal">
-    </TopBar>
-    <TopBar back="/demo" title="有返回功能" class="b-b-1">
-      <SvgBack slot="left"></SvgBack>
-    </TopBar>
-    <TopBar title="有操作功能" class="b-b-1">
-      <p slot="right">编辑</p>
-    </TopBar>
-    <TopBar back="/demo" title="设置字体颜色" f-color="teal" class="b-b-1">
-      <span slot="left">返回</span>
-      <p slot="right">编辑</p>
-    </TopBar>
+    <div>
+      <TopBar title="没有返回功能">
+      </TopBar>
+      <TopBar title="有背景色" bg-color="teal">
+      </TopBar>
+      <TopBar back="/demo" title="有返回功能" class="b-b-1">
+        <SvgBack slot="left"></SvgBack>
+      </TopBar>
+      <TopBar title="有操作功能" class="b-b-1">
+        <p slot="right">编辑</p>
+      </TopBar>
+      <TopBar back="/demo" title="设置字体颜色" f-color="teal" class="b-b-1">
+        <span slot="left">返回</span>
+        <p slot="right">编辑</p>
+      </TopBar>
+    </div>
     <div class="p-20">
       <h1>说明：</h1>
       <p class="m-t-5">1.slot:left定义居左的返回样式，可使用SvgBack图标或文字，或其他自定义</p>
