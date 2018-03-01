@@ -26,7 +26,7 @@
       <p class="m-t-5">3.标题使用title属性定义，未定义情况下默认使用路由配置里的属性meta里的name</p>
       <p class="m-t-5">4.默认没有白色字体，字体颜色使用自定义黑色；设置背景色的情况下，字体颜色默认白色</p>
       <p class="m-t-5">5.fixed为true时，position为fixed</p>
-      <p class="m-t-5">5.属性：</p>
+      <p class="m-t-5">6.属性：</p>
       <p>title | 标题(String)(默认$route.meta.name)</p>
       <p>bg-color | 背景色(可选值在color公共样式定义)</p>
       <p>f-color | 字体颜色(可选值在color公共样式定义)</p>

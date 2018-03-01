@@ -3,24 +3,31 @@
     <TopBar back="/demo" fixed class="b-b-1">
       <SvgBack slot="left"></SvgBack>
     </TopBar>
-    <TabBar
-      :menus="[
-        {name: '首页', iconClass: 'icon-homepage', path: '/demo'},
-        {name: '订单', iconClass: 'icon-order', path: '/demo/topBar'},
-        {name: '我的', iconClass: 'icon-mine', path: '/demo/tabBar'}
-      ]"
+    <Cell title="点击打开Picker" @click.native="showPicker1 = true">
+    </Cell>
+    <Picker
+      :showed="showPicker1"
+      @close ="showPicker1 = false"
+      :picker-array="picker1"
       >
-    </TabBar>
+    </Picker>
   </div>
 </template>
 
 <script>
   export default {
-    name: 'tabBar-demo',
+    name: 'picker-demo',
     mixins: [],
     components: {},
     data() {
-      return {}
+      return {
+        showPicker1: false,
+        picker1: [
+          {values: ['北京', '上海', '浙江']},
+          {divider: true, content: '-'},
+          {values: ['北京', '北京郊区']}
+        ]
+      }
     },
     beforeRouteEnter(to, from, next) {
       next();

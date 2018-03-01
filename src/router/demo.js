@@ -30,15 +30,23 @@ const demoRouter = [
     name: 'colorCard',
     component: dComponent('/ColorCard'),
     meta: {
-      name: 'Color Card'
+      name: '色卡'
     }
   },
   {
-    path: '/demo/tabBar',
-    name: 'tabBar',
-    component: dComponent('/TabBar'),
+    path: '/demo/navBar',
+    name: 'navBar',
+    component: dComponent('/NavBar'),
     meta: {
-      name: 'TabBar'
+      name: '底部导航'
+    }
+  },
+  {
+    path: '/demo/picker',
+    name: 'picker',
+    component: dComponent('/Picker'),
+    meta: {
+      name: 'Picker'
     }
   }
 ]

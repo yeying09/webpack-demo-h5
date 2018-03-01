@@ -23,7 +23,8 @@
       <p class="m-t-5">2.使用has-arrow或is-link属性会带上箭头，使用is-link必须配置to属性</p>
       <p class="m-t-5">3.标题宽度title-width和内容宽度content-width最好使用百分比配置，两者相加为97%(使两者之间有间隙)</p>
       <p class="m-t-5">4.使用href属性，可跳转外部链接。(组件没有href属性的情况下也可直接使用，因为转为a标签可直接使用)</p>
-      <p class="m-t-5">5.属性：</p>
+      <p class="m-t-5">5.点击使用click.native</p>
+      <p class="m-t-5">6.属性：</p>
       <p>title | 标题(String)</p>
       <p>content | 内容(String)</p>
       <p>title-width | 标题宽度(String，建议使用百分比)</p>

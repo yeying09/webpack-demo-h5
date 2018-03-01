@@ -30,8 +30,12 @@
             path: '/demo/colorCard'
           },
           {
-            title: 'TabBar',
-            path: '/demo/tabBar'
+            title: 'NavBar',
+            path: '/demo/navBar'
+          },
+          {
+            title: 'Picker',
+            path: '/demo/picker'
           }
         ]
       }
