@@ -32,7 +32,7 @@
           let len = children.length
           for(let i=0; i<len; i++) {
             if(!children[i].tag || children[i].tag.indexOf('tabBarItem') === '-1') {
-              throw new Error('please use TabBarItem in TabBar');
+              throw new Error('please use TabBarItem in NavBar');
             }
             // 计算宽度
             children[i].elm.style.width = 1 / len *100 +'%';
