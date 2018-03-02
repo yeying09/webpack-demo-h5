@@ -23,7 +23,7 @@
       return {
         showPicker1: false,
         picker1: [
-          {values: ['北京', '上海', '浙江']},
+          {values: ['北京', '上海', '浙江','北京', '上海', '浙江']},
           {divider: true, content: '-'},
           {values: ['北京', '北京郊区']}
         ]
