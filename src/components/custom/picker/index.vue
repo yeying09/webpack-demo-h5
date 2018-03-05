@@ -1,6 +1,6 @@
 <template>
   <div class="layer-box" :class="[{'layer-mask': hasMask}, {'-show': showed}]" @click="clickMe">
-    <div class="dis-flex flex-cross-center popup-box" :class="[{'-show': showed}]" @click.stop="">
+    <div class="dis-flex flex-cross-center overflow-hidden popup-box" :class="[{'-show': showed}]" @click.stop="">
       <div
         class="picker-ul"
         :class="[litem.divider? 'flex-0':'flex-1']"
@@ -71,25 +71,39 @@
         this.$emit('change', this.values);
       },
       touchstart(event) {
-        console.log(event)
-        this.startP = event.touches[0].pageY;
+        // console.log(event)
+        this.startP = event.touches[0].clientY;
       },
       touchmove(event, ul) {
-        this.endP = event.touches[0].pageY;
+        this.endP = event.touches[0].clientY;
         let offP = this.endP - this.startP,
-          absOffP = Math.abs(offP),
+          // absOffP = Math.abs(offP),
           transformStr = this.$refs[ul][0].style.transform
         let indexBrace = transformStr.indexOf('('),
           indexUnit = transformStr.indexOf('rem'),
           nowoff = transformStr.substring(indexBrace+1, indexUnit)
+//        console.log(this.startP)
+//        console.log(this.endP)
+//        console.log(offP)
+        console.log(getComputedStyle(this.$refs[ul][0]).transform)
         // if(absOffP > 36/2)
-        console.log(this.$refs[ul][0].style.transform)
-        this.$refs[ul][0].style.transform = 'translate(' +(offP/37.5 + nowoff) + 'rem)';
+        // console.log(transformStr)
+        // console.log(nowoff)
+        let result = offP/37.5 + nowoff;
+        result = parseFloat(result).toFixed(2);
+        this.css3Transform(ul, 'translateY(' + result + 'rem)');
       },
       touchend(event, ul) {
-        console.log(ul)
-        const offP = Math.abs(this.endP - this.startP);
-        console.log(offP);
+        // console.log(ul)
+        // const offP = Math.abs(this.endP - this.startP);
+        // console.log(offP);
+      },
+      css3Transform(ul, value) {
+        let arrPriex = ['OT', 'MsT', 'MozT', 'WebkitT', 't'];
+        const length = arrPriex.length;
+        for (let i=0; i < length; i+=1) {
+          this.$refs[ul][0].style[arrPriex[i] + 'ransform'] = value;
+        }
       }
     },
     filters: {},
