@@ -7,7 +7,7 @@
            :class="{'-active': $route.path === menu.path}">
       </use>
     </svg>
-    <em :class="{'text-orange': $route.path === menu.path}">{{menu.name || 'menu1'}}</em>
+    <em :class="{'text-orange': $route.path === menu.path}">{{menu.name}}</em>
   </router-link>
 </template>
 
