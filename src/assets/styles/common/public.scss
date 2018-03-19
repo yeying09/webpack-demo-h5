@@ -27,6 +27,9 @@ body {
   background-color: #fff;
   line-height: 1.2;
   color: #333;
+  /* 禁止选中文本 */
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 * {
