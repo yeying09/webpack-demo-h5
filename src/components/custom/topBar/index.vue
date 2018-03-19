@@ -12,7 +12,7 @@
     <p
       class="top-title text-ellipsis text-center"
       :class="[bgColor? 'text-white font-sans': 'text-'+fColor]">
-      {{title || $route.meta.name}}
+      {{title}}
     </p>
     <div
       class="top-right pos-a"
@@ -55,7 +55,11 @@
       next();
     },
     created() {},
-    mounted() {},
+    mounted() {
+      if(!this.title) {
+        this.title = this.$route.meta.name
+      }
+    },
     computed: {},
     methods: {},
     filters: {},
