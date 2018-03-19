@@ -6,9 +6,9 @@ import router from './router'
 
 import '@/assets/js/common/flexible'
 
-import '@/assets/styles/common/reset.scss'
-import '@/assets/styles/common/public.scss'
-import '@/assets/styles/common/helper.scss'
+import '@/assets/styles/reset.scss'
+import '@/assets/styles/public.scss'
+import '@/assets/styles/helper.scss'
 
 import '@/assets/font/iconfont.scss'
 import '@/assets/font/iconfont.js'

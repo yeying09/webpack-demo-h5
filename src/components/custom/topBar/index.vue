@@ -28,7 +28,10 @@
     mixins: [],
     components: {},
     props: {
-      title: '',
+      title: {
+        type: String,
+        default: this.$route.meta.name
+      },
       bgColor: { // 全局定义的颜色工具
         type: String,
         default: ''
