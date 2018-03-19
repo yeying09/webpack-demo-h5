@@ -122,7 +122,7 @@
     </div>
     <h3>bg-white + text-black</h3>
     <div class="dis-flex color-box">
-      <div class="-item bg-white text-black">black</div>
+      <div class="-item bg-white text-black b-1">black</div>
     </div>
     <h3>text-gray</h3>
     <div class="dis-flex color-box">

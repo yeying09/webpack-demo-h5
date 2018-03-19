@@ -2,4 +2,4 @@
 /config/
 /dist/
 /*.js
-/src/assets/font/iconfont.js
+/src/assets/font/*.js
