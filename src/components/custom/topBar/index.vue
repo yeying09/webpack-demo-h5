@@ -12,7 +12,7 @@
     <p
       class="top-title text-ellipsis text-center"
       :class="[bgColor? 'text-white font-sans': 'text-'+fColor]">
-      {{title}}
+      {{title || $route.meta.name}}
     </p>
     <div
       class="top-right pos-a"
@@ -30,7 +30,7 @@
     props: {
       title: {
         type: String,
-        default: this.$route.meta.name
+        default: ''
       },
       bgColor: { // 全局定义的颜色工具
         type: String,
@@ -55,11 +55,7 @@
       next();
     },
     created() {},
-    mounted() {
-      if(!this.title) {
-        this.title = this.$route.meta.name
-      }
-    },
+    mounted() {},
     computed: {},
     methods: {},
     filters: {},

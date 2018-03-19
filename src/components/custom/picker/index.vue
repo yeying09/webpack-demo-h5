@@ -1,6 +1,6 @@
 <template>
   <div class="layer-box" :class="[{'layer-mask': hasMask}, {'-show': showed}]" @click="clickMe">
-    <div class="dis-flex flex-cross-center overflow-hidden popup-box" :class="[{'-show': showed}]" @click.stop="">
+    <div class="dis-flex flex-cross-center overflow-hidden popup-box" :class="[{'-show': showed}]" @click.stop="true;">
       <div
         class="picker-ul"
         :class="[litem.divider? 'flex-0':'flex-1']"
@@ -76,12 +76,12 @@
       },
       touchmove(event, ul) {
         this.endP = event.touches[0].clientY;
-        let offP = this.endP - this.startP,
+        let offP = this.endP - this.startP;
           // absOffP = Math.abs(offP),
-          transformStr = this.$refs[ul][0].style.transform
-        let indexBrace = transformStr.indexOf('('),
-          indexUnit = transformStr.indexOf('rem'),
-          nowoff = transformStr.substring(indexBrace+1, indexUnit)
+        let transformStr = this.$refs[ul][0].style.transform;
+        let indexBrace = transformStr.indexOf('(');
+        let indexUnit = transformStr.indexOf('rem');
+        let nowoff = transformStr.substring(indexBrace+1, indexUnit);
 //        console.log(this.startP)
 //        console.log(this.endP)
 //        console.log(offP)
